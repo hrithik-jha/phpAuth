@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP Form</title>
+    </head>
+    <style>
+        form {
+            padding: 10px;
+            background-color: lightgreen;
+        }
+        #back {
+            padding: 10px;
+            padding-bottom: 30px;
+            background-color: lightskyblue;
+            width: 35%;
+            border-style: solid;
+            border-color: gray;
+            border-width: 2px;
+            margin: 5px;
+            border-spacing: 15px;
+        }
+    </style>
+    <body>
+        <div id="back">
+        <form action="db.php" method="POST">
+            <table>
+                <tr>
+                    <td>First Name(User Name):</td> <td><input type="text" name="user"></td>
+                </tr>
+                <tr>
+                    <td>Last Name(Password):</td> <td><input type="text" name="pass"></td>
+                </tr></table>
+                </br>
+                <button type="submit" formaction="dbCheck.php">Login</button>
+                <button type="submit" formaction="validForm.html">Register Yourself</button>
+                <button type="submit" formaction="dbDisplay.php">Show all users</button>        
+        </form>
+        </div>
+    </body>
+</html>
